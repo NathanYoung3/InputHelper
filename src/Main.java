@@ -6,8 +6,8 @@ public class Main {
         Scanner scan = new Scanner(System.in);
 
         //Testing getInt
-        double x = InputHelper.getDouble(scan, "Please enter in a double value.");
-        System.out.println("My double is: " + x);
+        boolean x = InputHelper.getYNConfirm(scan, "Please enter a y n answer.");
+        System.out.println("My bool is: " + x);
 
 
     }

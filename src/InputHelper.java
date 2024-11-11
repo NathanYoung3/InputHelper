@@ -15,7 +15,7 @@ public class InputHelper {
         do {
             string = scan.nextLine();
             if (string.isEmpty()) {
-                System.out.println("Invalid input. Please try again.");
+                System.out.println("String can't be blank. Please try again.");
             } else {
                 done = true;
             }
@@ -69,7 +69,7 @@ public class InputHelper {
                 if (num >= min && num <= max) {
                     done = true;
                 } else {
-                    System.out.println("Invalid input. Please try again.");
+                    System.out.println("Int has to be within the range. Please try again.");
                 }
             } else {
                 System.out.println("Invalid input. Please try again.");
@@ -90,7 +90,7 @@ public class InputHelper {
                 if (num >= min && num <= max) {
                     done = true;
                 } else {
-                    System.out.println("Invalid input. Please try again.");
+                    System.out.println("Double has to be within the range. Please try again.");
                 }
             } else {
                 System.out.println("Invalid input. Please try again.");

@@ -157,4 +157,29 @@ public class InputHelper {
         } while (!valid);
         return response;
     }
+
+    public static void prettyHeader(String msg){
+        int msgLength = msg.length();
+        int starLength = 60;
+        int centeredLength = (starLength - 6 - msgLength) / 2;
+
+        for (int i = 0; i < starLength; i++) {
+            System.out.printf("%1s", "*");
+        }
+
+        System.out.print("\n***");
+        for (int i = 0; i < centeredLength; i++) {
+            System.out.printf("%1s", " ");
+        }
+        System.out.print(msg);
+        for (int i = 0; i < centeredLength; i++) {
+            System.out.printf("%1s", " ");
+        }
+        System.out.print("***");
+
+        System.out.println();
+        for (int i = 0; i < 60; i++) {
+            System.out.printf("%1s", "*");
+        }
+    }
 }

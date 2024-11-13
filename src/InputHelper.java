@@ -141,4 +141,20 @@ public class InputHelper {
         } while (!done);
         return yn;
     }
+
+    public static String getRegExString(Scanner scan, String prompt, String regEx){
+        String response;
+        boolean valid = false;
+
+        do {
+            System.out.println(prompt);
+            response = scan.nextLine();
+            if (response.matches(regEx)) {
+                valid = true;
+            } else {
+                System.out.println("Invalid input. Please try again.");
+            }
+        } while (!valid);
+        return response;
+    }
 }
